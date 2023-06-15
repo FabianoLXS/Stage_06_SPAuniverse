@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
 :root {
+  font-size: 62.5%;
   background: black;
+  color: white;
 }
 
 a {
@@ -7,7 +16,14 @@ a {
   text-decoration: none;
 }
 
-.backgroundImg {
- background-size: cover;
+/* .hide {
+  display: none;
+} */
 
+input {
+content: url("/assets/HoverOff.png")
+}
+
+input:hover{
+  content: url("/assets/HoverOn.png")
 }
