@@ -13,6 +13,11 @@
   font-family: var(--ff-style)
 }
 
+body{
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
 nav {
   margin: 4rem 7.2rem;
   display: flex;
@@ -36,12 +41,11 @@ a {
   transition: 100ms;
 }
 
-a:hover{ 
+a:hover, a:focus { 
    font-weight: bolder;
-   
 }
 
-p{
+p {
   font-size: 18px;
   line-height: 160%;
   color: #E1E1E6;
@@ -57,34 +61,23 @@ header {
   padding: 25rem;
 }
 
-
-
-
-
-/* .homepage
-  {
-  background-image: url('/assets/mountainsUniverse01.png');
-  background-repeat: no-repeat;
-  background-size:100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  overflow: auto;
+.backgroundImage {
   position: absolute;
-  text-align: center;
-  background-size: cover;
-  } */
-
-/* .hide {
-  display: none;
-} */
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
 
 input {
 content: url("/assets/HoverOff.png");
 margin-top: 2.4rem;
+background: none;
+border: none;
 }
 
 input:hover{
   content: url("/assets/HoverOn.png");
 }
+
