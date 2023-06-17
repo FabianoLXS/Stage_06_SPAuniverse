@@ -3,20 +3,65 @@
   padding: 0;
   border: none;
   box-sizing: border-box;
+  --ff-style: roboto;
 }
 
 :root {
   font-size: 62.5%;
   background: black;
   color: white;
+  font-family: var(--ff-style)
+}
+
+nav {
+  margin: 4rem 7.2rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 3.2rem;
+}
+
+h1, h2 {
+  font-size: 4.8rem;
+}
+
+h1 {
+  margin: 18.5rem 10rem 0;
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-size: 2rem;
+  transition: 100ms;
 }
 
-.homepage
+a:hover{ 
+   font-weight: bolder;
+   
+}
+
+p{
+  font-size: 18px;
+  line-height: 160%;
+  color: #E1E1E6;
+  max-width: 64.8rem;
+  margin: 1.6rem 10rem; 
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  padding: 25rem;
+}
+
+
+
+
+
+/* .homepage
   {
   background-image: url('/assets/mountainsUniverse01.png');
   background-repeat: no-repeat;
@@ -29,16 +74,17 @@ a {
   position: absolute;
   text-align: center;
   background-size: cover;
-  }
+  } */
 
 /* .hide {
   display: none;
 } */
 
 input {
-content: url("/assets/HoverOff.png")
+content: url("/assets/HoverOff.png");
+margin-top: 2.4rem;
 }
 
 input:hover{
-  content: url("/assets/HoverOn.png")
+  content: url("/assets/HoverOn.png");
 }
