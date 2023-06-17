@@ -70,14 +70,14 @@ header {
   object-fit: fill;
 }
 
-input {
+a img {
 content: url("/assets/HoverOff.png");
 margin-top: 2.4rem;
 background: none;
 border: none;
 }
 
-input:hover{
+a img:hover{
   content: url("/assets/HoverOn.png");
 }
 
